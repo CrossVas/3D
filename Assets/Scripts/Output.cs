@@ -20,21 +20,15 @@ public class Output : MonoBehaviour
     void Start()
     {
         // Sorted internally
-        InternalSortAndPrint();
-        
-        // Sorted using conditional
-        PrintSort(c, a, b); 
-        
-        // print array after sorting
-        print($"{NUM[1]} {NUM[2]} {NUM[0]}"); 
-        print($"{NUM[2]} {NUM[0]} {NUM[1]}");
-    }
-    
-    // Built-in sorting method
-    void InternalSortAndPrint()
-    {
         NUM.Sort();
         print($"{NUM[0]} {NUM[1]} {NUM[2]}");
+        
+        // 조건문 사용함
+        PrintSort(c, a, b); 
+        
+        // 배열 사용함
+        print($"{NUM[1]} {NUM[2]} {NUM[0]}"); 
+        print($"{NUM[2]} {NUM[0]} {NUM[1]}");
     }
     
     // Sorting method using conditional
